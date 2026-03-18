@@ -547,7 +547,7 @@ export default function KinTranslator() {
     setDebugInfo(null);
 
     try {
-      const response = await fetch("http://localhost:3001/api/translate", {
+      const response = await fetch("https://kintranslate-backend.onrender.com/api/translate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         signal: controller.signal,
