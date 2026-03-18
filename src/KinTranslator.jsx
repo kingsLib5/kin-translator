@@ -567,7 +567,7 @@ export default function KinTranslator() {
     } catch (err) {
       if (err.name === "AbortError") return;
       setStatus({ type: "error", msg: `Network error: ${err.message}` });
-      setDebugInfo(`${err.name}: ${err.message}\n\nIs the proxy running?\n  node proxy.js`);
+      setDebugInfo(`${err.name}: ${err.message}\n\nIs the proxy running?\n  node index.js`);
     }
   };
 
